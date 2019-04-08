@@ -4,9 +4,8 @@ const config = require("./config.json");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame('TEST');
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
-
 
 
 client.on("message", async message => {

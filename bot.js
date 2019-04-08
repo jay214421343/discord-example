@@ -4,7 +4,6 @@ const config = require("./config.json");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 
@@ -114,12 +113,7 @@ client.on("message", async message => {
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Ping?");
     m.edit(`Our Current Commands are : !ban | !kick | !say | !help | !ping | !purge | •Notice• For some commands you need A role Called Administrator`);
-  }
-    if(command === 'avatar') {
-	if (!message.mentions.users.size) {
-		return message.channel.send(`Your avatar: <${message.author.displayAvatarURL}>`);
-	}
-	
+  }  					
 });
 
 // THIS  MUST  BE  THIS  WAY

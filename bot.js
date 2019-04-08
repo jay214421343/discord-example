@@ -119,9 +119,7 @@ client.on("message", async message => {
 	if (!message.mentions.users.size) {
 		return message.channel.send(`Your avatar: <${message.author.displayAvatarURL}>`);
 	}
-
-	// ...
-}
+	
 });
 
 // THIS  MUST  BE  THIS  WAY

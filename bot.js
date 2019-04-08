@@ -115,6 +115,13 @@ client.on("message", async message => {
     const m = await message.channel.send("Ping?");
     m.edit(`Our Current Commands are : !ban | !kick | !say | !help | !ping | !purge | •Notice• For some commands you need A role Called Administrator`);
   }
+    if(command === 'avatar') {
+	if (!message.mentions.users.size) {
+		return message.channel.send(`Your avatar: <${message.author.displayAvatarURL}>`);
+	}
+
+	// ...
+}
 });
 
 // THIS  MUST  BE  THIS  WAY

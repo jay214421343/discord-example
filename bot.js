@@ -136,7 +136,7 @@ message.channel.send({embed: {
     footer: {
       icon_url: client.user.avatarURL,
       text: "© Example"
-    },
+    }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot

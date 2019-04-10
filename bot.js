@@ -114,6 +114,13 @@ client.on("message", async message => {
     const m = await message.channel.send("Ping?");
     m.edit(`Our Current Commands are : !ban | !kick | !say | !help | !ping | !purge | •Notice• For some commands you need A role Called Administrator`);
   }
+    
+    if(command === "test") {
+    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
+    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
+    const m = await message.channel.send("Ping?");
+    m.edit(`Hey This Is a Test Command`);
+  }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot

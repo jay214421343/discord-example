@@ -130,5 +130,6 @@ client.on("message", async message => {
     const z = await message.channel.send("Ping?");
     z.edit(`Bot Stats : Working`);
   }
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot
